@@ -1,5 +1,233 @@
 body{
+    background-color: #1a1a1e;
+    color: white;
+    font-family: "Inter", sans-serif;
     display: flex;
-    margin-left: 33%;
-    margin-right: 33%;
+    align-items: center;
+    justify-content: center;
 }
+
+/* From Uiverse.io by McHaXYT */ 
+/* From Uiverse.io by vinodjangid07 */ 
+#main-container {
+    margin-top: 2vw;
+    width: fit-content;
+    height: 45px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    padding: 5px;
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    background-color: #202024;
+  }
+
+  #main-container.focused{
+    border: 2px solid #4a92e8;
+  }
+  
+  .icon {
+    width: 30px;
+    fill: rgb(255, 255, 255);
+    margin-left: 8px;
+    transition: all 0.3s;
+  }
+  #task {
+    max-width: 170px;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    background-color: #202024;
+    color: white;
+    font-size: 1em;
+  }
+  
+  #task:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #202024 inset;
+    -webkit-text-fill-color: #ffffff;
+  }
+  #submit {
+    height: 100%;
+    width: 95px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    background-color: #5865f2;
+    font-weight: 500;
+    font-size: medium;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all 0.3s;
+  }
+
+  #todo{
+    font-size: 2vw;
+    margin-bottom: 0;
+  }
+
+  li{
+    display: flex;
+    width: 17vw;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    list-style: none;
+    font-size: 0.8vw;
+    margin-top: 0.7vw;
+  }
+
+  .task-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5em; /* spacing between checkbox and text */
+  }
+  
+  .task-text {
+    color: white; /* optional styling */
+  }
+
+  h3{
+    color: #82838b;
+    font-weight: 500;
+  }
+
+  footer{
+    position:fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    padding: 1vw;
+    background-color: #121214;
+    width: 100%;
+    font-size: small;
+  }
+
+  #container{
+    width: 20vw;
+    color: white;
+    border-radius: 3vw;
+    background-color: #131314;
+    display:flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 4vw;
+    margin-top: 5vw;
+  }
+
+  #Capa_1{
+    width: 25px;
+    fill: rgb(255, 255, 255);
+    margin-left: 8px;
+    transition: all 0.3s;
+  }
+
+
+  #submit:hover {
+    background-color: #4654c0;
+  }
+  
+  #submit:active {
+    transform: scale(0.9);
+  }
+
+  #deleteButton{
+    background-color: transparent;
+    border:none;
+    color: white;
+    margin-right: 2vw;
+    cursor: pointer;
+  }
+
+  #deleteButton:hover{
+    color: #c23a3f;
+  }
+
+/* From Uiverse.io by bociKond */ 
+/* Hide the default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 1.5rem;
+    user-select: none;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    --clr: #0B6E4F;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 1.3em;
+    width: 1.3em;
+    background-color: #ccc;
+    border-radius: .5rem;
+    transition: 300ms;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: var(--clr);
+    border-radius: .5rem;
+    animation: pulse 500ms ease-in-out;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 0.45em;
+    top: 0.25em;
+    width: 0.25em;
+    height: 0.5em;
+    border: solid #E0E0E2;
+    border-width: 0 0.15em 0.15em 0;
+    transform: rotate(45deg);
+  }
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 #0B6E4F90;
+      rotate: 20deg;
+    }
+  
+    50% {
+      rotate: -20deg;
+    }
+  
+    75% {
+      box-shadow: 0 0 0 10px #0B6E4F60;
+    }
+  
+    100% {
+      box-shadow: 0 0 0 13px #0B6E4F30;
+      rotate: 0;
+    }
+  }
+  
+  
+  
